@@ -3,11 +3,12 @@ This module connects to the mhofu database and inserts data into the mhofu table
 """
 
 import psycopg2
+import os
 
 # Establish a connection to the database
 conn=psycopg2.connect(database="mhofu",
-user="postgres",
-password="Eureka22",
+user=os.getenv("User"),
+password=os.getenv("PASSWORD"),
 host="localhost",
 port="5432")
 
