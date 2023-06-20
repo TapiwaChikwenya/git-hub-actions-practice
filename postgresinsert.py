@@ -5,9 +5,9 @@ This module connects to the mhofu database and inserts data into the mhofu table
 import psycopg2
 
 # Establish a connection to the database
-conn=psycopg2.connect(database="mhofu", 
+conn=psycopg2.connect(database="mhofu",
                       user="postgres",
-                     password="Eureka22", 
+                     password="Eureka22",
                      host="localhost",
                      port="5432")
 
@@ -27,4 +27,3 @@ conn.close()
 
 #adding newlinecharacter 
 print()
-
