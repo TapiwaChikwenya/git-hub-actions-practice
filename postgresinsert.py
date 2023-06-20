@@ -1,9 +1,8 @@
 """
 This module connects to the mhofu database and inserts data into the mhofu table.
 """
-
-import psycopg2
 import os
+import psycopg2
 
 # Establish a connection to the database
 conn=psycopg2.connect(database="mhofu",
