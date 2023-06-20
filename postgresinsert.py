@@ -26,4 +26,3 @@ cur.close()
 conn.close()
 
 #adding newlinecharacter
-print()
