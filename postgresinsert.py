@@ -6,10 +6,10 @@ import psycopg2
 
 # Establish a connection to the database
 conn=psycopg2.connect(database="mhofu",
-                      user="postgres",
-                     password="Eureka22",
-                     host="localhost",
-                     port="5432")
+user="postgres",
+password="Eureka22",
+host="localhost",
+port="5432")
 
 # Create a cursor object
 cur = conn.cursor()
@@ -25,5 +25,5 @@ conn.commit()
 cur.close()
 conn.close()
 
-#adding newlinecharacter 
+#adding newlinecharacter
 print()
